@@ -2,9 +2,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio | K-12 Program Instructor</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout & Sections */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Experience/Projects Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>[Your Name]</h1>
+        <p>K-12 Program Instructor & Administrator</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I am a dedicated educational professional with over six years of experience leading comprehensive K-12 programs. I specialize in designing engaging curriculum, mentoring students, and managing program logistics. Recently, I have been expanding my focus to include administrative leadership to help scale educational initiatives and improve overall program delivery.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <h3>Program Leadership</h3>
+                    <p>Led and coordinated company-wide K-12 initiatives, ensuring alignment with educational standards and maximizing student engagement.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Administrative Operations</h3>
+                    <p>Managed scheduling, resource allocation, and cross-team communication to streamline daily educational operations.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Curriculum Development</h3>
+                    <p>Designed hands-on, interactive learning materials tailored to diverse age groups across the K-12 spectrum.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>I am always open to discussing educational leadership, program development, and new opportunities.</p>
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lee McPeters. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
